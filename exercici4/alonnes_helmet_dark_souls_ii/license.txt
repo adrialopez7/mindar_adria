@@ -1,0 +1,11 @@
+Model Information:
+* title:	Alonne`s Helmet_Dark Souls II
+* source:	https://sketchfab.com/3d-models/alonnes-helmet-dark-souls-ii-05357cef2b6f4d99bd1e783df213c132
+* author:	goatter (https://sketchfab.com/goatter)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Alonne`s Helmet_Dark Souls II" (https://sketchfab.com/3d-models/alonnes-helmet-dark-souls-ii-05357cef2b6f4d99bd1e783df213c132) by goatter (https://sketchfab.com/goatter) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
