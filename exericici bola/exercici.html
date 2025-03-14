@@ -1,41 +1,60 @@
 <html>
   <head>
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  <script>
-	let unobjecte = document.querySelector("#esmou");
- 
-	unobjecte.addEventListener("click", () => {            
-	  unobjecte.setAttribute("animation", {
-		property: "position",
-		to: "8 40 -6",
-		dur: 10000
-	  });
-	});
-  </script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+      window.onload = function () {
+        let unobjecte = document.querySelector("#esmou");
 
+        unobjecte.addEventListener("click", () => {
+          unobjecte.setAttribute("animation", {
+            property: "position",
+            to: "8 40 -6",
+            dur: 10000
+          });
+        });
+      };
+    </script>
   </head>
   <body>
-	<a-scene cursor="rayOrigin: mouse">
+    <a-scene cursor="rayOrigin: mouse">
+      <a-assets>
+        <img id="fons" src="fons.jpeg" />
+        <img id="texturaterra" src="cesped.jpeg" />
+        <img id="guernica" src="dark souls.jpeg" />
+        <img id="cara" src="dragon ball.png" />
+        <img id="bicicletes" src="betis.jpeg" />
+        <img id="texturaesfera" src="krillin.webp" />
+        <img id="texturacilindre" src="far cry.jpeg" />
+        <img id="texturacono" src="peru.png" />
+      </a-assets>
 
-	
-        <a-assets>
-          <img id="fons" src="fons1.jpg" />
-          <img id="texturaterra" src="texturaterra.jpg" />
-          <img id="guernica" src="guernica.jpg" />        
-          <img id="cara" src="6.jpg" />            
-          <img id="bicicletes" src="7.jpg" />
-     
-        </a-assets>
-        <a-sky src="#fons"></a-sky>
-        <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="#texturaterra"></a-plane>
-		<a-plane position="-1 4 -8" rotation="0 0 0" width="8" height="2"  src="#guernica"
+      <a-sky src="#fons"></a-sky>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="#texturaterra"></a-plane>
+
+      <a-plane position="-1 4 -8" rotation="0 0 0" width="8" height="2" src="#guernica"
         animation="property: position; to: -1 4 -30; dur: 5000; dir: alternate; loop: true">
-        </a-plane>
-		<a-box position="-4 3 0" rotation="0 0 50"  src="#cara" depth="1" height="1" width="1"
-        animation="property: rotation; to: 0 360 0; dur: 4000; loop: true"></a-box>
-		<a-dodecahedron id="esmou" position="8 2 -6" rotation="0 30 0" radius="3" src="#bicicletes">
-        </a-dodecahedron>
+      </a-plane>
 
-        </a-scene>
+      <a-box position="-4 3 0" rotation="0 0 50" src="#cara" depth="1" height="1" width="1"
+        animation="property: rotation; to: 0 360 0; dur: 4000; loop: true">
+      </a-box>
+
+      <a-dodecahedron id="esmou" position="8 2 -6" rotation="0 30 0" radius="3" src="#bicicletes">
+      </a-dodecahedron>
+
+      
+      <a-sphere position="2 2 -5" radius="1.5" src="#texturaesfera"
+        animation="property: material.color; to: blue; dur: 2000; dir: alternate; loop: true"> 
+      </a-sphere>
+
+      <a-cylinder position="-2 1 -5" radius="0.5" height="2" src="#texturacilindre"
+        animation="property: position; to: -2 3 -5; dur: 1500; dir: alternate; loop: true">
+      </a-cylinder>
+
+      <a-cone position="4 2 4" radius-bottom="1" radius-top="0.2" height="2" src="#texturacono"
+        animation="property: rotation; to: 0 360 0; dur: 3000; loop: true">
+      </a-cone>
+
+    </a-scene>
   </body>
 </html>
