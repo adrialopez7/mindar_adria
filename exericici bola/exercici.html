@@ -14,6 +14,24 @@
         });
       };
     </script>
+       <script>
+          let unobjecte = document.querySelector("#esmou");
+       
+          unobjecte.addEventListener("click", () => {            
+            unobjecte.setAttribute("animation", {
+
+
+              property: "position",
+
+
+              to: "8 40 -6",
+
+
+              dur: 10000
+            });
+          });
+        </script>
+
   </head>
   <body>
     <a-scene cursor="rayOrigin: mouse">
@@ -44,7 +62,7 @@
 
       
       <a-sphere position="2 2 -5" radius="1.5" src="#texturaesfera"
-        animation="property: material.color; to: blue; dur: 2000; dir: alternate; loop: true"> 
+        animation="property: rotation; to: 1000 1000 1000; dur: 5000; dir: alternate; loop: true"> 
       </a-sphere>
 
       <a-cylinder position="-2 1 -5" radius="0.5" height="2" src="#texturacilindre"
